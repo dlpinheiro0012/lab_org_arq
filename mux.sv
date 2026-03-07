@@ -1,13 +1,19 @@
 module mux
-  (
-    output logic f,
-    input  logic a, b, sel
-  ); 
+(
+input logic [31:0] e1,e2,e3,e4,
+input logic [2:0] sel,
+output logic [31:0] f
+);
 
-  and g1(f1, a, n_sel),
-      g2(f2, b, sel);
-  or  g3(f, f1, f2);
-  not g4(n_sel, sel);
+always_comb begin
+
+case (sel)
+3'b000 : f = e1;
+3'b001 : f = e2;
+3'b010 : f = e3;
+3'b011 : f = e4;
+default : f = 32'd0;
+endcase
+end
 
 endmodule
-
