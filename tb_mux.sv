@@ -16,6 +16,5 @@ initial begin
    for(selecao = 0; selecao < 4; selecao++) #10;
    #10 $stop;
    end
-end
 endmodule
 
