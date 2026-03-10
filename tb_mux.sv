@@ -14,7 +14,6 @@ mux dut(.f(muxOut),.e1(a),.e2(b),.e3(c),.e4(d),.sel(selecao));
 initial begin
    $monitor($time," a=%d | b=%d | c=%d | d=%d | sel=%b | muxOut=%d",a, b, c, d, selecao, muxOut);
    for(selecao = 0; selecao < 4; selecao++) #10;
-   #10 $stop;
+   $stop;
    end
 endmodule
-
