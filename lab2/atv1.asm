@@ -15,4 +15,3 @@ halt
 a: .word 0x6
 b: .word 0xf
 m: .word 0x0
-
