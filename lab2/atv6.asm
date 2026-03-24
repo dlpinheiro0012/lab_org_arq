@@ -1,3 +1,6 @@
+# Este código foi testado em outro PC e funcionou, mas no meu pessoal não funcionou; eu reiniciei o compsim 7 vezes
+# mas ainda assim não deu a resposta desejada. 
+
 addi x11, x0, 1
 addi x12, x0, 32 
 addi x13, x0, 1
